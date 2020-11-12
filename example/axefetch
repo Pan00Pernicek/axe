@@ -1,5 +1,5 @@
 #!/bin/sh
-axe-e lolcat "echo ............" "lolcat -t -a -i"
+axe-e lolcat "axe-p "echo ............" "lolcat -t -a -i""
 axe-b lolcat bash
 axe-x unamk "uname -o" sh
 axe-l unamk
