@@ -1,33 +1,33 @@
 #!/bin/sh
-sh p "echo ............" "lolcat -t -a -i"
-sh x unamk "uname -o" ash
-sh l unamk
-sh s uan ":| distro | "
-sh c echo uan unamk
-sh x kernel "uname -r" ash
-sh l kernel
-sh s ker ":| kernel | "
-sh c echo ker kernel
-sh x device "uname -n" ash
-sh l device
-sh x arch "bashbox arch" ash
-sh l arch
-sh s pc ":| device | "
-sh m infodev pc device
-sh s space " "
-sh m inlo infodev space
-sh c echo inlo arch
-sh x host "cat /sys/devices/virtual/dmi/id/product_name" ash
-sh l host
-sh s hname ":| host__ | "
-sh c echo hname host
-sh x shell "basename $SHELL" ash
-sh l shell
-sh s shname ":| shell_ | "
-sh c echo shname shell
-sh x bin "bashbox ls /usr/bin | bashbox wc -l" ash
-sh l bin
-sh s pkg ":| pkgs__ | "
-sh c echo pkg bin
-sh p "echo ............" "lolcat -t -a -i"
-sh f
+axe p "echo ............" "lolcat -t -a -i"
+axe x unamk "uname -o" ash
+axe l unamk
+axe s uan ":| distro | "
+axe c echo uan unamk
+axe x kernel "uname -r" ash
+axe l kernel
+axe s ker ":| kernel | "
+axe c echo ker kernel
+axe x device "uname -n" ash
+axe l device
+axe x arch "bashbox arch" ash
+axe l arch
+axe s pc ":| device | "
+axe m infodev pc device
+axe s space " "
+axe m inlo infodev space
+axe c echo inlo arch
+axe x host "cat /sys/devices/virtual/dmi/id/product_name" ash
+axe l host
+axe s hname ":| host__ | "
+axe c echo hname host
+axe x shell "basename $SHELL" ash
+axe l shell
+axe s shname ":| shell_ | "
+axe c echo shname shell
+axe x bin "bashbox ls /usr/bin | bashbox wc -l" ash
+axe l bin
+axe s pkg ":| pkgs__ | "
+axe c echo pkg bin
+axe p "echo ............" "lolcat -t -a -i"
+axe f
