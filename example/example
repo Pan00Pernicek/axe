@@ -1,0 +1,72 @@
+#can be any shell :D
+#x = execute
+#l = link
+#s = set
+#c = combine
+#m = merge
+#f = flush
+#u = unset
+#r = redirect
+#a = append
+#p = pipe
+#o = output
+#g = get
+#i = if
+#setting variable a to value "0"
+sh s a 0
+#setting variable b to value "abc + 24"
+sh s b "abc + 24"
+#reading variable a
+sh g a
+#reading variable b
+sh g b
+#unset (delete) variable a
+sh u a
+#and see
+sh g a
+#execute commands executes command in specified shell in background and saves it output to "output variable"
+#this for example executes pwd in bash and saves to "whereami"
+sh x whereami pwd bash
+#and now print output of pwd using output command
+sh o whereami
+#or
+#convert to normal varible using link command
+sh l whereami
+#and use get command
+sh g whereami
+#pipe echo to lolcat
+sh p "echo abc" lolcat
+#pipe variable to lolcat with flags
+sh p "sh g b" "lolcat -i"
+#redirect echo to file "test"
+sh r "echo hello world" test
+#append another line to it
+sh a "sh o whereami" test
+#read test using standart command
+cat test
+#and delete it
+rm test
+#combine variable b with variable whereami and print it
+sh c echo b whereami
+#set another variable
+sh s hi "hello world"
+#merge with variable b and save to variable "what"
+sh m what hi b
+#read it
+sh g what
+#combine what and whereami and figlet it
+sh c figlet what whereami
+#delete all variables
+sh f
+#try read variable b
+sh g b
+#set another few variables
+sh s location 12
+sh s time day
+#basic if example
+#this will print "hi" if location = time
+sh i location time "echo hi"
+#if else example
+sh i location time "echo hello" "echo location != time" 
+#clear
+sh f

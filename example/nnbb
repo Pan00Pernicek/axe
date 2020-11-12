@@ -1,0 +1,33 @@
+#!/bin/sh
+sh p "echo ............" "lolcat -t -a -i"
+sh x unamk "uname -o" ash
+sh l unamk
+sh s uan ":| distro | "
+sh c echo uan unamk
+sh x kernel "uname -r" ash
+sh l kernel
+sh s ker ":| kernel | "
+sh c echo ker kernel
+sh x device "uname -n" ash
+sh l device
+sh x arch "bashbox arch" ash
+sh l arch
+sh s pc ":| device | "
+sh m infodev pc device
+sh s space " "
+sh m inlo infodev space
+sh c echo inlo arch
+sh x host "cat /sys/devices/virtual/dmi/id/product_name" ash
+sh l host
+sh s hname ":| host__ | "
+sh c echo hname host
+sh x shell "basename $SHELL" ash
+sh l shell
+sh s shname ":| shell_ | "
+sh c echo shname shell
+sh x bin "bashbox ls /usr/bin | bashbox wc -l" ash
+sh l bin
+sh s pkg ":| pkgs__ | "
+sh c echo pkg bin
+sh p "echo ............" "lolcat -t -a -i"
+sh f
