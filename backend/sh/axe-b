@@ -1,0 +1,3 @@
+#!/bin/sh
+chmod +x ~/axe/ex/$1
+~/axe/ex/$1
