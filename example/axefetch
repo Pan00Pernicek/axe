@@ -1,7 +1,6 @@
 #!/bin/sh
 axe-s lolcat "............"
 axe-p "axe-g lolcat" "lolcat -t"
-axe-b lolcat bash
 axe-x unamk "uname -o" sh
 axe-l unamk
 axe-s uan ":| distro | "
