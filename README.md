@@ -1,5 +1,5 @@
 # axe
-shitty scripting langage like thingy
+shitty scripting language like thingy
 
 made in another shell script language for extra speed
 
