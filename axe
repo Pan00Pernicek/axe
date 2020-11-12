@@ -1,4 +1,4 @@
 #!/bin/sh
 action=$1
 shift
-~/axe/backend/sh/action $@ 
+~/axe/backend/sh/$action $@ 
