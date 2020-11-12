@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ $(sh g $1) = $(sh g $2) ];then
+if [ $(axe-g $1) = $(axe-g $2) ];then
  $3
 else
  $4
