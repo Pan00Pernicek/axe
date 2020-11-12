@@ -1,0 +1,3 @@
+#!/bin/sh
+touch ~/axe/sv/$1
+echo "$2" > ~/axe/sv/$1

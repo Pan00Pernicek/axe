@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ $(sh g $1) = $(sh g $2) ];then
+ $3
+else
+ $4
+fi
