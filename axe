@@ -1,0 +1,2 @@
+#!/bin/sh
+~/axe/backend/sh/$1
