@@ -12,3 +12,5 @@ p = pipe
 o = output
 g = get
 i = if
+e = expand
+b = boot
