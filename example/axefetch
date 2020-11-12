@@ -1,5 +1,6 @@
 #!/bin/sh
-axe-e lolcat "axe-p "echo ............" "lolcat -t -a -i""
+axe-s lolcat "............"
+axe-p "axe-g lolcat" "lolcat -t"
 axe-b lolcat bash
 axe-x unamk "uname -o" sh
 axe-l unamk
@@ -30,5 +31,5 @@ axe-x bin "bashbox ls /usr/bin | bashbox wc -l" sh
 axe-l bin
 axe-s pkg ":| pkgs__ | "
 axe-c echo pkg bin
-axe-b lolcat bash
+axe-p "axe-g lolcat" "lolcat -t"
 axe-f
