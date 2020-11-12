@@ -1,1 +1,14 @@
 examples of axe
+x = execute
+l = link
+s = set
+c = combine
+m = merge
+f = flush
+u = unset
+r = redirect
+a = append
+p = pipe
+o = output
+g = get
+i = if
