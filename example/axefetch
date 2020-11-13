@@ -10,7 +10,7 @@ axe-c uan unamk
 axe-x kernel "uname -r"
 axe-l kernel
 axe-s ker ":| kernel | "
-axe-c echo ker kernel
+axe-c ker kernel
 axe-x device "uname -n"
 axe-l device
 axe-x arch arch
@@ -31,6 +31,6 @@ axe-c shname shell
 axe-x bin "bashbox ls /usr/bin | bashbox wc -l"
 axe-l bin
 axe-s pkg ":| pkgs__ | "
-axe-c echo pkg bin
+axe-c pkg bin
 axe-p "axe-g lolcat" "lolcat -t"
 axe-f
