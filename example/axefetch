@@ -1,32 +1,34 @@
 #!/bin/sh
 axe-s lolcat "............"
 axe-p "axe-g lolcat" "lolcat -t"
-axe-x unamk "uname -o" sh
+axe-d x sh
+axe-x unamk "uname -o"
 axe-l unamk
 axe-s uan ":| distro | "
-axe-c echo uan unamk
-axe-x kernel "uname -r" sh
+axe-d c echo
+axe-c uan unamk
+axe-x kernel "uname -r"
 axe-l kernel
 axe-s ker ":| kernel | "
 axe-c echo ker kernel
-axe-x device "uname -n" sh
+axe-x device "uname -n"
 axe-l device
-axe-x arch arch sh
+axe-x arch arch
 axe-l arch
 axe-s pc ":| device | "
 axe-m infodev pc device
 axe-s space " "
 axe-m inlo infodev space
-axe-c echo inlo arch
-axe-x host "cat /sys/devices/virtual/dmi/id/product_name" sh
+axe-c inlo arch
+axe-x host "cat /sys/devices/virtual/dmi/id/product_name"
 axe-l host
 axe-s hname ":| host__ | "
-axe-c echo hname host
-axe-x shell "basename $SHELL" sh
+axe-c hname host
+axe-x shell "basename $SHELL"
 axe-l shell
 axe-s shname ":| shell_ | "
-axe-c echo shname shell
-axe-x bin "bashbox ls /usr/bin | bashbox wc -l" sh
+axe-c shname shell
+axe-x bin "bashbox ls /usr/bin | bashbox wc -l"
 axe-l bin
 axe-s pkg ":| pkgs__ | "
 axe-c echo pkg bin
