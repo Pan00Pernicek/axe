@@ -1,0 +1,3 @@
+#!/bin/sh
+touch ~/axe/env/$1
+echo "$2" > ~/axe/env/$1
