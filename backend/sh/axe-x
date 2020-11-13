@@ -1,4 +1,4 @@
 #!/bin/sh
 touch ~/axe/xv/$1
 echo $2 > ~/axe/xv/$1
-echo $($3 ~/axe/xv/$1) > ~/axe/xv/$1
+echo $($(cat ~/axe/env/x) ~/axe/xv/$1) > ~/axe/xv/$1
