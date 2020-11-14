@@ -7,7 +7,7 @@ axe-x 3 "uname -o"
 axe-l 3
 axe-s 4 ":| distro | "
 axe-d c echo
-axe-c 3 4
+axe-c 4 3
 axe-x 5 "uname -r"
 axe-l 5
 axe-s 6 ":| kernel | "
