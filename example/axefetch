@@ -1,36 +1,37 @@
 #!/bin/sh
-axe-s lolcat "............"
-axe-p "axe-g lolcat" "lolcat -t"
+axe-s 0 "echo ............"
+axe-s 1 "lolcat -t"
+axe-p 0 1
 axe-d x sh
-axe-x unamk "uname -o"
-axe-l unamk
-axe-s uan ":| distro | "
+axe-x 3 "uname -o"
+axe-l 3
+axe-s 4 ":| distro | "
 axe-d c echo
-axe-c uan unamk
-axe-x kernel "uname -r"
-axe-l kernel
-axe-s ker ":| kernel | "
-axe-c ker kernel
-axe-x device "uname -n"
-axe-l device
-axe-x arch arch
-axe-l arch
-axe-s pc ":| device | "
-axe-m infodev pc device
-axe-s space " "
-axe-m inlo infodev space
-axe-c inlo arch
-axe-x host "cat /sys/devices/virtual/dmi/id/product_name"
-axe-l host
-axe-s hname ":| host__ | "
-axe-c hname host
-axe-x shell "basename $SHELL"
-axe-l shell
-axe-s shname ":| shell_ | "
-axe-c shname shell
-axe-x bin "bashbox ls /usr/bin | bashbox wc -l"
-axe-l bin
-axe-s pkg ":| pkgs__ | "
-axe-c pkg bin
-axe-p "axe-g lolcat" "lolcat -t"
+axe-c 3 4
+axe-x 5 "uname -r"
+axe-l 5
+axe-s 6 ":| kernel | "
+axe-c 6 5
+axe-x 7 "uname -n"
+axe-l 7
+axe-x 8 arch
+axe-l 8
+axe-s 9 ":| device | "
+axe-m a 9 7
+axe-s b " "
+axe-m c a b
+axe-c c 8
+axe-x d "cat /sys/devices/virtual/dmi/id/product_name"
+axe-l d
+axe-s e ":| host__ | "
+axe-c e d
+axe-x f "basename $SHELL"
+axe-l f
+axe-s g ":| shell_ | "
+axe-c g f
+axe-x h "ls /usr/bin | wc -l"
+axe-l h
+axe-s i ":| pkgs__ | "
+axe-c i h
+axe-p 0 1
 axe-f
