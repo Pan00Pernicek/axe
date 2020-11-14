@@ -1,2 +1,2 @@
 #!/bin/sh
-$2 ~/axe/ex/$1
+$(cat ~/axe/env/b) ~/axe/ex/$1
