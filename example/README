@@ -1,16 +1,28 @@
 examples of axe
-x = execute
-l = link
-s = set
-c = combine
-m = merge
-f = flush
-u = unset
-r = redirect
-a = append
-p = pipe
-o = output
-g = get
-i = if
-e = expand
-b = boot
+x = execute command in scripting lang defined by env "x"
+l = link output to variable
+s = set variable to given value
+c = combine tvo variables in command defined by env "c"
+m = merge two variables into one
+f = flush all variables (unset)
+u = unset variable
+r = redirect command to location
+a = append command to location
+p = pipe command defined by variable to command define by variable
+o = output of execute
+g = get content of variable
+i = if variable = variable do "command" else "command" (recommended to use with expand)
+e = expand command (link multiple commands to "ex" variables) (create function)
+b = boot (launch) expanded command (shell defined by env "b"
+d = define env variable
+j = add another line to normal variable
+w = read from input and save as variable
+
+variables
+sv = setvariable = normal variable
+xv = executed variable = output of "x" command
+ex = expanded execute = stores finctions function  
+env = enviroment variable = used for defining how commands are executed
+
+real usage
+axe-<command to execute
