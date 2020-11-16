@@ -21,7 +21,7 @@ w = read from input and save as variable
 variables
 sv = setvariable = normal variable
 xv = executed variable = output of "x" command
-ex = expanded execute = stores finctions function  
+ex = expanded execute = stores functions  
 env = enviroment variable = used for defining how commands are executed
 
 real usage
