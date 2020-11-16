@@ -10,7 +10,7 @@ r = redirect command to location
 a = append command to location
 p = pipe command defined by variable to command defined by variable
 o = output of execute
-g = get content of variable
+g = get content of variable and print them
 i = if variable = variable do "command" else "command" (recommended to use with expand)
 e = expand command (link multiple commands to "ex" variables) (create function)
 b = boot (launch) expanded command (shell defined by env "b"
