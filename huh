@@ -1,0 +1,52 @@
+#!/usr/bin/env sh
+dir=/tmp/linerun
+mkdir $dir
+a() {
+	$1 >> $2
+}
+b() {
+	#. $dir/$1
+	:
+}
+f() {
+	rm -r $dir
+}
+g() {
+	cat $dir/$1
+}
+i() {
+	if [ $(g $1) = $(g $2) ];then
+	 $3
+	else
+	 $4
+	fi
+}
+j() {
+	echo $2 >> $dir/$1
+}
+m() {
+	a=$(g $2)
+	b=$(g $3)
+	s $1 "$a$b"
+}
+p() {
+	s $1 $($(g $2) | $(g $3))
+}
+r() {
+	$1 > $2
+}
+s() {
+	echo -n "$2" > $dir/"$1"
+}
+u() {
+	rm $dir/$1
+	
+}
+w() {
+	read a
+	s $1 $a
+}
+x() {
+	s $1 "$(. $dir/$2)"
+}
+. ./$1
