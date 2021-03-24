@@ -1,0 +1,58 @@
+#!/home/darek/dev/axe/linerun
+s 0 "tput setaf 2"
+x 1 0
+g 1
+s 2 "------------"
+j 2 ""
+g 2
+s 3 "uname -o"
+x 4 3
+s 5 ":| distro | "
+m 6 5 4
+j 6 ""
+g 6
+s 7 "uname -r"
+x 8 7
+s 9 ":| kernel | "
+m a 9 8
+j a ""
+g a
+s b "uname -n"
+x c b
+s d arch
+x e d
+s f ":| device | "
+m g f b
+s h " "
+m i h e
+m j g i
+j j ""
+g j
+s k "cat /sys/devices/virtual/dmi/id/product_name"
+x l k
+s m ":| host__ | "
+m n m l
+j n ""
+g n
+s o "printenv SHELL"
+x p o
+s q "echo "
+m r q p
+s s "xargs basename"
+p t r s
+s u ":| shell_ | "
+m v u t
+j v ""
+g v
+s w "ls /usr/bin"
+s x "wc -l"
+p y w x
+s z ":| bins__ | "
+m A z y
+j A ""
+g A
+g 2
+s B "tput sgr0"
+x C B
+g C
+f
