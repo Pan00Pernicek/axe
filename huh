@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-dir=/tmp/linerun
+dir=/tmp/huh
 mkdir $dir
 a() {
 	$1 >> $2
