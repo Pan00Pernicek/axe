@@ -4,10 +4,6 @@ mkdir $dir
 a() {
 	$1 >> $2
 }
-b() {
-	#. $dir/$1
-	:
-}
 f() {
 	rm -r $dir
 }

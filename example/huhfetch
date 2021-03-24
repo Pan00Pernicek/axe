@@ -1,4 +1,4 @@
-#!/home/darek/dev/axe/linerun
+#!/usr/bin/env huh
 s 0 "tput setaf 2"
 x 1 0
 g 1
