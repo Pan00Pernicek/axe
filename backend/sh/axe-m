@@ -1,4 +1,0 @@
-#!/bin/sh
-a=$(cat ~/axe/sv/$2)
-b=$(cat ~/axe/sv/$3)
-axe-s $1 "$a$b"

@@ -1,6 +1,0 @@
-#!/bin/sh
-exec 2>/dev/null
-rm ~/axe/sv/*
-rm ~/axe/xv/*
-rm ~/axe/ex/*
-rm ~/axe/env/*

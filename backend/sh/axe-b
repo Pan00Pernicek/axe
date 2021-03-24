@@ -1,2 +1,0 @@
-#!/bin/sh
-$(cat ~/axe/env/b) ~/axe/ex/$1

@@ -1,3 +1,0 @@
-#!/bin/sh
-read a
-axe-s $1 $a

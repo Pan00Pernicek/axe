@@ -1,6 +1,0 @@
-#!/bin/sh
-if [ $(axe-g $1) = $(axe-g $2) ];then
- $3
-else
- $4
-fi

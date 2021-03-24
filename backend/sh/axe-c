@@ -1,4 +1,0 @@
-#!/bin/sh
-a=$(cat ~/axe/sv/$1)
-b=$(cat ~/axe/sv/$2)
-$(cat ~/axe/env/c) $a$b

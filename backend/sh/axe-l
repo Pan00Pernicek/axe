@@ -1,2 +1,0 @@
-#!/bin/sh
-cp ~/axe/xv/$1 ~/axe/sv/$1

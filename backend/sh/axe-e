@@ -1,3 +1,0 @@
-#!/bin/sh
-touch ~/axe/ex/$1
-echo $2 >> ~/axe/ex/$1
