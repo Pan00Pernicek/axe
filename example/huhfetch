@@ -22,7 +22,7 @@ x c b
 s d arch
 x e d
 s f ":| device | "
-m g f b
+m g f c
 s h " "
 m i h e
 m j g i
