@@ -8,7 +8,7 @@ r = redirect command to location
 a = append command to location
 p = pipe command defined by variable to command defined by variable and save output to variable defined by first agr
 g = get content of variable and print them
-i = if variable = variable do "command" else "command" 
+i = if variable = variable do "command from variable" else "command from variable" 
 j = add another line (+ newline) to normal variable
 w = read from input and save as variable
 
